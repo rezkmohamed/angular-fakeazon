@@ -12,21 +12,23 @@ import { HeaderComponent } from './main/components/header/header.component';
 import { FooterComponent } from './main/components/footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { GalleryItemComponent } from './main/components/gallery/gallery-item/gallery-item.component';
+import { MainModule } from './main/main.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    GalleryComponent,
-    FooterComponent,
-    GalleryItemComponent
+    // HeaderComponent,
+    // GalleryComponent,
+    // FooterComponent,
+    // GalleryItemComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FontAwesomeModule,
-    FormsModule
+    FormsModule,
+    MainModule
   ],
   providers: [],
   bootstrap: [AppComponent]
