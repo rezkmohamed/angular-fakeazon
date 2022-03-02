@@ -30,6 +30,9 @@ export class HeaderComponent {
           },
           error: (err) => {
             console.log(err);
+          },
+          complete: () => {
+            this.formProductsByName?.reset();
           }
         })
     }
