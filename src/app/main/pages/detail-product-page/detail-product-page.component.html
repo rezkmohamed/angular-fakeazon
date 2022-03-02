@@ -1,23 +1,25 @@
 <body>
-    <section id="product-info">
+    <h1 *ngIf="!productLoaded">LOADING PRODUCT</h1>
+    
+    <section id="product-info" *ngIf="productLoaded">
 
         <div class="item-image-parent">
             <div class="item-list-vertical">
                 <div class="thumb-box">
-                    <img src="https://i.ibb.co/VJf6fXm/thumb1.jpg" alt="thumbnail" />
+                    <img src="../../../../assets/images/dummyimgprod.jpeg" alt="thumbnail" />
                 </div>
 
             </div>
             <div class="item-image-main">
-                <img src="https://i.ibb.co/xYpFY0T/item1.jpg" alt="default" />
+                <img src="../../../../assets/images/dummyimgprod.jpeg" alt="default" />
             </div>
         </div>
 
         <div class="item-info-parent">
             <!-- main info -->
             <div class="main-info">
-                <h4>EYEBOGLER Regular Fit Men's Cotton T-Shirt</h4>
-                <p>Price: <span id="price">$ 449.00</span></p>
+                <h4>{{product.name}}</h4>
+                <p>Price: <span id="price">$ {{product.price}}</span></p>
             </div>
             <!-- Choose -->
             <div class="select-items">

@@ -58,6 +58,8 @@ header {
 .item-image-main img {
     width: 100%;
     height: auto;
+    max-height: 500px;
+    max-width: 400px;
 }
 
 .thumb-box:hover {
