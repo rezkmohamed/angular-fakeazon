@@ -26,7 +26,7 @@ export class SearchProductsPage {
                 this.nameToSearch = "";
                 this.loadProducts();
             }
-        )
+        );
     }
 
     loadProducts() {
@@ -35,6 +35,12 @@ export class SearchProductsPage {
         this.productsService.fetchProductsByNameLike(this.nameToSearch).subscribe({
             next: (response) => {
                 console.log(response);
+                for(let product of response) {
+                    let productToAdd: Product = new Product(product.idProduct, product.category, 
+                        product.idProfile, product.img, product.name, 
+                        product.price, product.quantity);
+                    this.products.push(productToAdd);
+                }
             },
             error: (err) => {
                 console.log(err);

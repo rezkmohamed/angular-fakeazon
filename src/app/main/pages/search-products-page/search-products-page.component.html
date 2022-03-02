@@ -1,0 +1,8 @@
+<h1 *ngIf="!productsLoaded">
+    LOADINGGGGGG PRODUCTS
+</h1>
+
+<gallery-component 
+    [products]="products"
+    *ngIf="productsLoaded"
+></gallery-component>

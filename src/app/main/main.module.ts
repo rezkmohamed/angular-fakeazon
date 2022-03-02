@@ -11,6 +11,7 @@ import { MainRoutingModule } from "./main-routing.module";
 import { MainComponent } from "./main.component";
 import { DetailProductPageComponent } from "./pages/detail-product-page/detail-product-page.component";
 import { HomepageComponent } from "./pages/homepage/homepage.component";
+import { SearchProductsPage } from "./pages/search-products-page/search-products-page.component";
 
 @NgModule({
     declarations: [
@@ -20,7 +21,8 @@ import { HomepageComponent } from "./pages/homepage/homepage.component";
         GalleryItemComponent,
         MainComponent,
         HomepageComponent,
-        DetailProductPageComponent
+        DetailProductPageComponent,
+        SearchProductsPage
     ],
     imports: [
         RouterModule,
