@@ -11,13 +11,15 @@ import { GalleryComponent } from './main/components/gallery/gallery.component';
 import { HeaderComponent } from './main/components/header/header.component';
 import { FooterComponent } from './main/components/footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { GalleryItemComponent } from './main/components/gallery/gallery-item/gallery-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     GalleryComponent,
-    FooterComponent
+    FooterComponent,
+    GalleryItemComponent
   ],
   imports: [
     BrowserModule,
