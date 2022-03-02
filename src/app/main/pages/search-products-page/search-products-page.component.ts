@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { ActivatedRoute, Params } from "@angular/router";
+import { ActivatedRoute, Params, Router } from "@angular/router";
 import { Product } from "../../models/product.model";
 import { ProductsService } from "../../services/products.service";
 
@@ -11,11 +11,12 @@ import { ProductsService } from "../../services/products.service";
 export class SearchProductsPage {
     products: Product[] = [];
     productsLoaded: boolean = false;
-    startingNameToSearch: number = 2;
+    startingNameToSearch: number = 17;
     nameToSearch: string = "";
 
     constructor(private productsService: ProductsService,
-                private activatedRoute: ActivatedRoute) {}
+                private activatedRoute: ActivatedRoute,
+                private route: Router) {}
 
     ngOnInit() {
         this.activatedRoute.params.subscribe(
@@ -29,7 +30,18 @@ export class SearchProductsPage {
     }
 
     loadProducts() {
-        
-    }
+        this.nameToSearch = this.route.url.substring(this.startingNameToSearch, this.route.url.length);
 
+        this.productsService.fetchProductsByNameLike(this.nameToSearch).subscribe({
+            next: (response) => {
+                console.log(response);
+            },
+            error: (err) => {
+                console.log(err);
+            },
+            complete: () => {
+                this.productsLoaded = true;
+            }
+        });
+    }
 }
