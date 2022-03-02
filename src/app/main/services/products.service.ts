@@ -7,9 +7,7 @@ import { HttpClient, HttpHeaders } from "@angular/common/http";
 export class ProductsService {
     private urlBase: string = "http://localhost:8080/products/";
 
-    constructor(private http: HttpClient) {
-
-    }
+    constructor(private http: HttpClient) {}
 
     fetchProducts() {
         return this.http.get<any[]>(this.urlBase);

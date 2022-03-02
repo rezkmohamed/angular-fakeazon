@@ -28,16 +28,17 @@ export class HeaderComponent {
         console.log("get products by name::::");
         console.log(this.formProductsByName?.value.search);
         const nameProductLike = this.formProductsByName?.value.search;
-        this.productsService.fetchProductsByNameLike(nameProductLike).subscribe({
-          next: (response) => {
-            console.log(response);
-          },
-          error: (err) => {
-            console.log(err);
-          },
-          complete: () => {
-            this.formProductsByName?.reset();
-          }
-        })
+        this.router.navigate(['/products/search', nameProductLike]);
+        // this.productsService.fetchProductsByNameLike(nameProductLike).subscribe({
+        //   next: (response) => {
+        //     console.log(response);
+        //   },
+        //   error: (err) => {
+        //     console.log(err);
+        //   },
+        //   complete: () => {
+        //     this.formProductsByName?.reset();
+        //   }
+        // })
     }
 }
