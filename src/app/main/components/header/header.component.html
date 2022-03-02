@@ -1,0 +1,39 @@
+<body>
+  
+  <div id='navBar'>
+  <div id='topHalf'>
+    <div id='logoWrapper'>
+    <img id='logo' src="http://www.userlogos.org/files/logos/ArkAngel06/Amazon.png" />
+    </div>
+
+    <form (ngSubmit)="getSearchProductsByName()" #formProductsByName="ngForm">
+      <div class="search-box-wrapper">
+        <input 
+              type="text" 
+              class="search-box center" 
+              placeholder="Cerca per nome"
+              ngModel
+              name="search">
+        <i class="fa fa-search search-box-icon"></i>
+      </div>
+    </form>
+  </div>
+    
+    
+    
+    
+  <div id='bottomHalf'>
+    <div id='sections'>
+      <div class="section">Fakeazon.com</div>
+      <div class="section">Today's Deals</div>
+      <div class="section">Help</div>
+    </div>
+    <div id='accountStuff'>
+      <div class="section">Your Account</div>
+      <div class="section">Cart</div>
+    </div>
+  </div>
+</div>
+  
+  
+</body>
