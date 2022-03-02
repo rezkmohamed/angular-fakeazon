@@ -9,6 +9,7 @@ import { GalleryComponent } from "./components/gallery/gallery.component";
 import { HeaderComponent } from "./components/header/header.component";
 import { MainRoutingModule } from "./main-routing.module";
 import { MainComponent } from "./main.component";
+import { HomepageComponent } from "./pages/homepage/homepage.component";
 
 @NgModule({
     declarations: [
@@ -16,7 +17,8 @@ import { MainComponent } from "./main.component";
         GalleryComponent,
         FooterComponent,
         GalleryItemComponent,
-        MainComponent
+        MainComponent,
+        HomepageComponent
     ],
     imports: [
         RouterModule,
