@@ -1,5 +1,6 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 import { Router } from "@angular/router";
+import { Product } from "src/app/main/models/product.model";
 
 @Component({
     selector: 'gallery-item-component',
@@ -7,6 +8,7 @@ import { Router } from "@angular/router";
     styleUrls: ['./gallery-item.component.css']
 })
 export class GalleryItemComponent {
+    @Input('product') product: Product | undefined;
     constructor(private router: Router){
 
     }
