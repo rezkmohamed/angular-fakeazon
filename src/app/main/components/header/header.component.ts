@@ -20,6 +20,10 @@ export class HeaderComponent {
         
     }
 
+    goToHomePage(){
+        this.router.navigate(['/']);
+    }
+
     getSearchProductsByName() {
         console.log("get products by name::::");
         console.log(this.formProductsByName?.value.search);

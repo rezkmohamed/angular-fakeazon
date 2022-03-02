@@ -20,7 +20,7 @@
     display:inline-block;
     position:relative;
     width:150px;
-    
+    cursor: pointer;
   }
   #backToSchool{
     height:50px;
