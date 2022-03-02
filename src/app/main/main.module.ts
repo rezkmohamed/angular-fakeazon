@@ -8,14 +8,15 @@ import { GalleryItemComponent } from "./components/gallery/gallery-item/gallery-
 import { GalleryComponent } from "./components/gallery/gallery.component";
 import { HeaderComponent } from "./components/header/header.component";
 import { MainRoutingModule } from "./main-routing.module";
+import { MainComponent } from "./main.component";
 
 @NgModule({
     declarations: [
         HeaderComponent,
         GalleryComponent,
         FooterComponent,
-        GalleryItemComponent
-    
+        GalleryItemComponent,
+        MainComponent
     ],
     imports: [
         RouterModule,
