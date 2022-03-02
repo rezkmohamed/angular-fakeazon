@@ -8,7 +8,8 @@ import { Product } from "src/app/main/models/product.model";
     styleUrls: ['./gallery-item.component.css']
 })
 export class GalleryItemComponent {
-    @Input('product') product: Product | undefined;
+    @Input('product')
+    product!: Product;
     constructor(private router: Router){
 
     }

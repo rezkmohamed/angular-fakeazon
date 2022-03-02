@@ -2,7 +2,7 @@
     <div
         data-lightbox="models"
         data-title="Caption1"
-        (click)="openProduct('idprova')"
+        (click)="openProduct(product.idProduct)"
         >
         <img
             src="../../../../assets/images/dummyimgprod.jpeg"
@@ -10,10 +10,10 @@
         />
     </div>
     <div class="product-info">
-        <p>product: </p>
+        <p>product: {{product.name}}</p>
         <p>
-            price: $ 
+            price: $ {{product.price}}
         </p>
-        <p>quantity: </p>
+        <p>quantity: {{product.quantity}} </p>
     </div>
 </div>
