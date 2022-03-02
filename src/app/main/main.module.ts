@@ -9,6 +9,7 @@ import { GalleryComponent } from "./components/gallery/gallery.component";
 import { HeaderComponent } from "./components/header/header.component";
 import { MainRoutingModule } from "./main-routing.module";
 import { MainComponent } from "./main.component";
+import { DetailProductPageComponent } from "./pages/detail-product-page/detail-product-page.component";
 import { HomepageComponent } from "./pages/homepage/homepage.component";
 
 @NgModule({
@@ -18,7 +19,8 @@ import { HomepageComponent } from "./pages/homepage/homepage.component";
         FooterComponent,
         GalleryItemComponent,
         MainComponent,
-        HomepageComponent
+        HomepageComponent,
+        DetailProductPageComponent
     ],
     imports: [
         RouterModule,
