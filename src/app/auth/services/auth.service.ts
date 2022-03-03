@@ -16,6 +16,9 @@ export class AuthService {
     }
 
     loginProfile(profile: LoginProfile) {
-        return this.http.post<any>(this.urlBase + "login", profile);
+        return this.http.post<any>(this.urlBase + "login", 
+            profile,
+            { observe: 'response' }
+        );
     }
 }
