@@ -40,3 +40,14 @@ $bkBtnSize: 52px;
     left: $bkBtnSize*0.44;
   }
 }
+
+.btn-wrapper{
+  position: relative;
+}
+
+.btn {
+  margin-top: 13px;
+  position:absolute;
+  left:50%;
+  top:50%;
+}
