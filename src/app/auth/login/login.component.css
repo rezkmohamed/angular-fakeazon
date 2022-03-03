@@ -57,3 +57,13 @@ p{
     top: -11px;
     z-index: 1;
 }
+
+.btn-wrapper {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    margin-top: 7px;
+}
