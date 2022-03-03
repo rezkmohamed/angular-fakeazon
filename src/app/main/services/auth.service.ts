@@ -6,7 +6,7 @@ import { RegisterProfile } from "../models/register-profile.model";
     providedIn: 'root'
 })
 export class AuthService {
-    private urlBase = "";
+    private urlBase: string = "http://localhost:8080/";
 
     constructor(private http: HttpClient) {}
 
