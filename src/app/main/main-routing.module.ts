@@ -10,10 +10,10 @@ import { SearchProductsPage } from "./pages/search-products-page/search-products
 const routes: Routes = [
     { path: '', component: MainComponent, children: [
         { path: '', component: HomepageComponent},
+        { path: 'myproducts', component: CartPageComponent},
         { path: 'products', children: [
             { path: ':id', component: DetailProductPageComponent},
-            { path: 'search/:name', component: SearchProductsPage},
-            { path: 'myproducts', component: CartPageComponent}
+            { path: 'search/:name', component: SearchProductsPage}
         ]},
         { path: 'about', component: AboutComponent }
     ]}
