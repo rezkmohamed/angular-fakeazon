@@ -2,7 +2,7 @@ import { Component, ViewChild } from "@angular/core";
 import { NgForm } from "@angular/forms";
 import { Router } from "@angular/router";
 import { RegisterProfile } from "src/app/main/models/register-profile.model";
-import { AuthService } from "src/app/main/services/auth.service";
+import { AuthService } from "../services/auth.service";
 
 @Component({
     selector: 'register-component',

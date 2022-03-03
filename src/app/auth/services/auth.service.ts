@@ -1,6 +1,6 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { RegisterProfile } from "../models/register-profile.model";
+import { RegisterProfile } from "src/app/main/models/register-profile.model";
 
 @Injectable({
     providedIn: 'root'
