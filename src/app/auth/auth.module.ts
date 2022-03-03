@@ -3,12 +3,14 @@ import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { RouterModule } from "@angular/router";
 import { AuthComponent } from "./auth.component";
+import { LoginComponent } from "./login/login.component";
 import { RegisterComponent } from "./register/register.component";
 
 @NgModule({
     declarations: [
         AuthComponent,
-        RegisterComponent
+        RegisterComponent,
+        LoginComponent
     ],
     imports: [
         CommonModule,
@@ -16,6 +18,7 @@ import { RegisterComponent } from "./register/register.component";
         RouterModule.forChild([
             { path: '', component: AuthComponent, children: [
                 { path: 'register', component: RegisterComponent},
+                { path: 'login', component: LoginComponent}
             ]}
         ])
     ]
