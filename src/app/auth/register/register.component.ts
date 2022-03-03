@@ -1,5 +1,6 @@
 import { Component, ViewChild } from "@angular/core";
 import { NgForm } from "@angular/forms";
+import { Router } from "@angular/router";
 
 @Component({
     selector: 'register-component',
@@ -13,11 +14,15 @@ export class RegisterComponent {
     errorPsw: boolean = false;
     BAD_REQUEST: number = 400;
 
-    constructor(){}
+    constructor(private router: Router){}
 
     ngOnInit(){}
 
     onSubmit(){
         
+    }
+
+    onNavigateToLoginPage(){
+        this.router.navigate(['/auth/login']);
     }
 }

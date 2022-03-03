@@ -11,8 +11,7 @@ import { ProductsService } from "../../services/products.service";
 export class HeaderComponent {
     @ViewChild('formProductsByName') formProductsByName: NgForm | undefined;
     
-    constructor(private router: Router,
-                private productsService: ProductsService){
+    constructor(private router: Router){
 
     }
 
@@ -29,16 +28,5 @@ export class HeaderComponent {
         console.log(this.formProductsByName?.value.search);
         const nameProductLike = this.formProductsByName?.value.search;
         this.router.navigate(['/products/search', nameProductLike]);
-        // this.productsService.fetchProductsByNameLike(nameProductLike).subscribe({
-        //   next: (response) => {
-        //     console.log(response);
-        //   },
-        //   error: (err) => {
-        //     console.log(err);
-        //   },
-        //   complete: () => {
-        //     this.formProductsByName?.reset();
-        //   }
-        // })
     }
 }
