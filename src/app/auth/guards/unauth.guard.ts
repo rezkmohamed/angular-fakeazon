@@ -18,7 +18,6 @@ export class UnauthGuard implements CanActivate {
                     return true;
                 }
                 return this.router.createUrlTree(['/']);
-    
             })
         );
     }
