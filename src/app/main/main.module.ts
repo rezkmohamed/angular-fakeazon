@@ -9,6 +9,7 @@ import { GalleryComponent } from "./components/gallery/gallery.component";
 import { HeaderComponent } from "./components/header/header.component";
 import { MainRoutingModule } from "./main-routing.module";
 import { MainComponent } from "./main.component";
+import { AboutComponent } from "./pages/about/about.component";
 import { DetailProductPageComponent } from "./pages/detail-product-page/detail-product-page.component";
 import { HomepageComponent } from "./pages/homepage/homepage.component";
 import { SearchProductsPage } from "./pages/search-products-page/search-products-page.component";
@@ -22,7 +23,8 @@ import { SearchProductsPage } from "./pages/search-products-page/search-products
         MainComponent,
         HomepageComponent,
         DetailProductPageComponent,
-        SearchProductsPage
+        SearchProductsPage,
+        AboutComponent
     ],
     imports: [
         RouterModule,

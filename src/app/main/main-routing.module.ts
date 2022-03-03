@@ -1,6 +1,7 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { MainComponent } from "./main.component";
+import { AboutComponent } from "./pages/about/about.component";
 import { DetailProductPageComponent } from "./pages/detail-product-page/detail-product-page.component";
 import { HomepageComponent } from "./pages/homepage/homepage.component";
 import { SearchProductsPage } from "./pages/search-products-page/search-products-page.component";
@@ -11,8 +12,8 @@ const routes: Routes = [
         { path: 'products', children: [
             { path: ':id', component: DetailProductPageComponent},
             { path: 'search/:name', component: SearchProductsPage}
-        ]}
-
+        ]},
+        { path: 'about', component: AboutComponent }
     ]}
 ];
 
