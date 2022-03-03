@@ -13,6 +13,7 @@ import { AppComponent } from './app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 // import { GalleryItemComponent } from './main/components/gallery/gallery-item/gallery-item.component';
 import { MainModule } from './main/main.module';
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MainModule } from './main/main.module';
     HttpClientModule,
     FontAwesomeModule,
     FormsModule,
-    MainModule
+    MainModule,
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
